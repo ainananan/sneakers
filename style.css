@@ -40,7 +40,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
+  padding: 20px 40px;
   position: fixed;
   z-index: 10000;
   top: 0;
@@ -50,15 +50,12 @@ a {
 .header .site-title {
   line-height: 1px;
 }
-
 @media (max-width: 600px) {
   .header {
-    padding-left: 16px;
-  }
-  .toggle-btn {
-    right: 20px;
+    padding: 0 16px;
   }
 }
+
 .main-visual {
   padding-top: 80px;
 }
@@ -105,13 +102,18 @@ a {
 .toggle-btn {
   display: block;
   position: fixed;
-  top: 25px;
+  top: 30px;
   right: 45px;
   width: 30px;
   height: 30px;
   transition: all 0.5s;
   cursor: pointer;
   z-index: 20;
+}
+@media (max-width: 600px) {
+  .toggle-btn {
+    right: 20px;
+  }
 }
 
 .toggle-btn span {
@@ -227,7 +229,7 @@ a {
     flex-direction: column;
   }
   .contact-info,
-.contact-form {
+  .contact-form {
     width: 100%;
   }
   .contact-form .button input {
@@ -333,4 +335,4 @@ video {
   .feature {
     padding: 0 16px 90px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
